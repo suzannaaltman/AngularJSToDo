@@ -1,0 +1,45 @@
+body {
+background-color: #004466;
+font-family: monospace;
+}
+
+main {
+  text-align: center;
+  background-color: ivory;
+  display: block;
+  position: relative;
+  top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 650px;
+  border: 3px double maroon;
+  border-radius: 10px;
+}
+
+h1 {
+  padding: 40px 0 0 0;
+  font-size: 3em;
+}
+
+li {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+
+input {
+  width: 200px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 3px;
+  margin-bottom: 35px;
+}
+
+button#add{
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.4);
+  border: 1px solid red;
+  border-radius: 5px;
+}

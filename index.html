@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>To Do List</title>
+    <link href="style.css" rel="stylesheet">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-controller="MainController">
-    <h1>To Do:</h1>
-    <input type="text" ng-model="item"/>
-    <button ng-click="addClick(item)">Add</button>
-    <div>
-      <ul>
-        <li class="list" ng-repeat="toDo in toDos">
-          {{toDo}}
-          <button class="remove" ng-click="remove()">Done!</button>
-        </li>
-      </ul>
-    </div>
+    <main>
+      <h1>To Do:</h1>
+      <input type="text" ng-model="item"/>
+      <button id="add" ng-click="addClick(item)">Add</button>
+      <div>
+        <ul>
+          <li class="list" ng-repeat="toDo in toDos">
+            {{toDo}}
+            <button class="remove" ng-click="remove()">Done!</button>
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
